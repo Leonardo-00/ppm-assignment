@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/facebook-icon.svg"/>
+  <title>Test</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/section1.css" rel="stylesheet">
+  <link href="css/section2.css" rel="stylesheet">
+  <link href="css/section3.css" rel="stylesheet">
+  <link href="css/section4.css" rel="stylesheet">
+  <link href="css/services-section.css" rel="stylesheet">
+  <link href="css/main-article.css" rel="stylesheet">
+  <link href="css/featured-section.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+<header id="siteHeader" class="container-fluid bg-white p-0 custom-header">
+  <section class="language-selector align-items-center justify-content-center pt-2">
+        <a href="#" class="text-decoration-none text-dark active border-1 border-end border-secondary-subtle pe-2 me-2">FRANÇAIS</a>
+        <a href="#" class="text-decoration-none text-dark">ENGLISH</a>
+    </section>
+  <section class="header mx-auto align-items-center d-flex" id="header">
+    <a href="#" aria-label="headerBurgerMenu" class="header-menu-button text-black">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </a>
+    <a href="#" class="col-2 journal-link align-items-center hover-underline-text gap-2">
+      <img src="images/journal_icon.svg" alt="journal-icon">
+      <span class="underline-on-hover text-secondary">Consulter<br>le journal</span>
+    </a>
+    <a class="logo-container" href="#" >
+      <img class="logo img-fluid" src="images/logo.svg" alt="LeMonde logo">
+    </a>
+    <section id="header-right" class="header-right ms-auto d-flex align-items-center">
+      <a href="#" class="login-link d-flex align-items-center text-secondary text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill="currentColor" d="M10,17V14H3V10H10V7L15,12L10,17Z"/>
+          <path fill="currentColor" d="M20,3C21.1,3 22,3.9 22,5V19C22,20.1 21.1,21 20,21H12C10.9,21 10,20.1 10,19V17H12V19H20V5H12V7H10V5C10,3.9 10.9,3 12,3H20Z" />
+        </svg>
+        <span class="login-text">Se connecter</span>
+      </a>
+      <div class="vertical-divider"></div>
+      <button href="#" class="btn subscription-button"><b>S'abonner</b></button>
+    </section>
+  </section>
+</header>
+
+<nav class="navbar bg-white navbar-light">
+  <section class="navbar-content d-flex align-items-center">
+    <a href="#" class="nav-logo-button text-black d-none">
+      <img src="images/logo-icon.svg" alt="LeMonde logo">
+    </a>
+    <ul id="navbar-list" class="navbar-list justify-content-between mb-0 align-items-center d-flex list-unstyled">
+      <li class="nav-item nav-item-icon nav-home-button">
+        <a href="#" aria-label="home" class="text-decoration-none text-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z"></path>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item nav-item-icon nav-en-continu">
+        <a href="#" aria-label="en-continu" class="text-decoration-none text-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 16 16">
+            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M3.0598e-07 11C3.78403e-07 12.6569 1.34315 14 3 14L13 14C14.6569 14 16 12.6569 16 11V2L4 2L4 11H2L2 4H0L3.0598e-07 11ZM6 4L14 4V6H6V4ZM14 8H6L6 10H14V8Z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item nav-item-icon nav-video-feed">
+        <a href="#" aria-label="video-feed" class="text-decoration-none text-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24">
+            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM10.7828 7.99043L16.4265 11.1258C17.1123 11.5068 17.1123 12.4932 16.4265 12.8742L10.7828 16.0096C9.98293 16.4539 9 15.8756 9 14.9606V9.03942C9 8.12444 9.98293 7.54607 10.7828 7.99043Z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="text-decoration-none d-flex align-items-center text-dark">Lorem<i class="fa fa-caret-down"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="text-decoration-none d-flex align-items-center text-dark">Lorem ipsum<i class="fa fa-caret-down"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="text-decoration-none d-flex align-items-center text-dark">Lorem<i class="fa fa-caret-down"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="text-decoration-none d-flex align-items-center text-dark">Lorem ipsum<i class="fa fa-caret-down"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="text-decoration-none d-flex align-items-center text-dark">Lorem<i class="fa fa-caret-down"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="text-decoration-none d-flex align-items-center text-dark">Lorem ipsum<i class="fa fa-caret-down"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="text-decoration-none d-flex align-items-center text-dark">Lorem<i class="fa fa-caret-down"></i>
+        </a>
+      </li>
+      <li class="nav-item nav-search-button">
+        <a href="#" aria-label="search" class="nav-link px-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <section class="navbar-right d-flex d-none align-items-center">
+      <a href="#" class="login-link d-flex align-items-center text-secondary text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill="currentColor" d="M10,17V14H3V10H10V7L15,12L10,17Z"/>
+          <path fill="currentColor" d="M20,3C21.1,3 22,3.9 22,5V19C22,20.1 21.1,21 20,21H12C10.9,21 10,20.1 10,19V17H12V19H20V5H12V7H10V5C10,3.9 10.9,3 12,3H20Z" />
+        </svg>
+        <span class="login-text">Se connecter</span>
+      </a>
+      <div class="vertical-divider"></div>
+      <button href="#" class="btn subscription-button"><b>S'abonner</b></button>
+    </section>
+  </section>
+</nav>
+
+<section class="live-news container-fluid justify-content-center">
+  <section class="live-news-container d-flex justify-content-center px-5">
+    <ul class="news-feed container-fluid d-flex list-unstyled mx-2">
+      <li class="news-item">
+        <a href="#" class="news-link text-white">
+          <p class="news-item-time">11:58</p>
+          <p class="news-content text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+      </li>
+      <li class="news-item">
+        <a href="#" class="news-link text-white">
+          <p class="news-item-time">11:57</p>
+          <p class="news-content text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+      </li>
+      <li class="news-item">
+        <a href="#" class="news-link text-white">
+          <p class="news-item-time">11:56</p>
+          <p class="news-content text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+      </li>
+      <li class="news-item">
+        <a href="#" class="news-link text-white">
+          <p class="news-item-time">11:55</p>
+          <p class="news-content text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+      </li>
+      <li class="news-item">
+        <a href="#" class="news-link text-white">
+          <p class="news-item-time">11:54</p>
+          <p class="news-content text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+      </li>
+    </ul>
+    <a href="#" class="news-page-link d-flex text-decoration-none hover-underline-text text-white">
+      <span class="news-page-link-text underline-on-hover">Voir Plus</span>
+      <span class="news-page-link-arrow"> ></span>
+    </a>
+  </section>
+</section>
+
+<main class="main">
+
+  <section class="main-body-container">
+
+    <section class="body-section homepage-section">
+      <section class="main-article-section">
+        <article class="main-article">
+            <a href="#">
+              <h1 class="homepage-main-article-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus risus gravida dapibus consequat.
+              </h1>
+              <img src="images/main_article_img_664x332.svg" class="main-article-img img-fluid" alt="sample">
+              <p class="image-credits">Lorem ipsum / dolor</p>
+              <p class="homepage-main-article-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat
+                odio at porttitor tincidunt. Etiam quis dui id arcu sagittis.
+              </p>
+            </a>
+          </article>
+        <ul class="related-articles-list list-unstyled justify-content-between">
+            <li class="related-article">
+              <a href="#" class="hover-underline-text">
+                <img src="images/login-icon.svg" alt="sample"><span class="underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+              </a>
+            </li>
+            <li class="related-article">
+              <a href="#" class="hover-underline-text">
+                <img src="images/login-icon.svg" alt="sample"><span class="underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+              </a>
+            </li>
+            <li class="related-article">
+              <a href="#" class="hover-underline-text">
+                <img src="images/login-icon.svg" alt="sample"><span class="underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+              </a>
+            </li>
+          </ul>
+      </section>
+      <section class="runner-section align-items-center">
+        <section class="runner-section-articles">
+          <article class="runner-section-article">
+            <a href="#" class="text-dark hover-underline-text">
+              <img src="images/article_img_300x200.svg" alt="sample" class="runner-section-img">
+              <p class="image-credits">Lorem ipsum / dolor</p>
+              <section class="runner-section-article-content">
+                <h2 class="runner-section-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur feugiat</h2>
+                <p class="runner-section-article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus eleifend vitae lectus et euismod. Quisque eu lobortis ligula.
+                  Donec id varius odio, sed consectetur nisl. Vivamus nec molestie sem. Nam.
+              </section>
+            </a>
+          </article>
+          <hr class="runner-section-hr">
+          <article class="runner-section-article">
+            <a href="#" class="text-dark hover-underline-text">
+              <img src="images/article_img_300x200.svg" alt="sample" class="runner-section-img">
+              <p class="image-credits">Lorem ipsum / dolor</p>
+              <section class="runner-section-article-content">
+                <h2 class="runner-section-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur feugiat</h2>
+                <p class="runner-section-article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur feugiat</p>
+              </section>
+            </a>
+          </article>
+          <hr class="runner-section-hr">
+          <article class="runner-section-article">
+            <a href="#" class="text-dark hover-underline-text">
+              <img src="images/article_img_300x200.svg" alt="sample" class="runner-section-img">
+              <p class="image-credits">Lorem ipsum / dolor</p>
+              <section class="runner-section-article-content">
+                <h2 class="runner-section-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur feugiat</h2>
+                <p class="runner-section-article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur feugiat</p>
+              </section>
+            </a>
+          </article>
+        </section>
+        <article class="podcast-article">
+          <a href="#" class="text-dark text-decoration-none d-flex align-items-center w-100">
+            <img class="podcast-article-img" src="images/login-icon.svg" alt="sample">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <section class="podcast-article-content align-items-center">
+                <p class="podcast-article-header">
+                  <span class="podcast-article-type">PODCAST</span>
+                  <span class="podcast-article-date">Episode of 04 May 2022</span>
+                </p>
+                <span class="podcast-article-title">Lorem ipsum? dolor sit amet</span>
+                <span class="podcast-article-text">
+                  <img class="podcast-article-icon" width="20px" height="20px" src="images/login-icon.svg" alt="sample">Podcast
+                </span>
+
+                <span></span>
+              </section>
+              <button class="btn podcast-article-button align-items-center mx-3">
+                <img class="podcast-article-icon" src="images/login-icon.svg" alt="sample">
+                <span>Écouter l'épisode</span>
+              </button>
+            </div>
+          </a>
+        </article>
+      </section>
+      <section class="featured-section">
+        <article class="featured-article">
+          <a href="#" class="text-dark hover-underline-text">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="images/article_img_1294x862.svg" type="image/svg+xml">
+              <source media="(min-width: 1024px)" srcset="images/article_img_300x200.svg" type="image/svg+xml">
+              <img src="images/article_img_300x200.svg" class="featured-article-image" alt="sample">
+            </picture>
+            <section class="featured-article-text col-10 justify-content-center">
+              <p class="featured-article-type">Décryptage</p>
+              <p class="featured-article-author">Arnaud Leparmentier</p>
+              <h2>
+                <span class="featured-article-icon"><img src="images/login-icon.svg" width="20" alt="sample"></span>
+                <span class="featured-article-title underline-on-hover">L’administration Trump rétropédale après la panique mondiale des marchés financiers</span>
+              </h2>
+              <p class="featured-article-description">Donald Trump, Elon Musk et le secrétaire au Trésor font machine arrière concernant le renvoi du patron de la Fed,
+                le DOGE et les droits de douane chinois, dans le but de rassurer les acteurs financiers et reconquérir les Américains.
+              </p>
+            </section>
+            <p class="article-footer text-black">3 hours</p>
+          </a>
+        </article>
+        <article class="featured-message">
+          <div class="message-container">
+            <a href="#" class=" text-dark featured-message-link hover-underline-text text-decoration-none">
+              <p class="featured-message-header">Lorem ipsum</p>
+              <h3 class="featured-message-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+              <p class="featured-message-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat
+                odio at porttitor tincidunt. Etiam quis dui id arcu sagittis.</p>
+              <span>
+                <span class="featured-message-link-text underline-on-hover">Lorem ipsum</span>
+                <img class="featured-message-icon" src="images/login-icon.svg" width="12" height="12" alt="sample">
+              </span>
+            </a>
+          </div>
+        </article>
+      </section>
+      <section class="river-section d-flex flex-wrap align-items-center justify-content-between">
+        <article class="river-article">
+          <a href="#" class="text-dark hover-underline-text d-flex gap-1">
+            <h2 class="river-article-title underline-on-hover">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod.
+            </h2>
+            <img class="river-article-img" src="images/article_img_300x200.svg" alt="sample">
+          </a>
+        </article>
+        <article class="river-article">
+          <a href="#" class="text-dark hover-underline-text d-flex gap-1">
+            <h2 class="river-article-title underline-on-hover">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod.
+            </h2>
+            <img class="river-article-img" src="images/article_img_300x200.svg" alt="sample">
+          </a>
+        </article>
+        <article class="river-article">
+          <a href="#" class="text-dark hover-underline-text d-flex gap-1">
+            <h2 class="river-article-title underline-on-hover">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod.
+            </h2>
+            <img class="river-article-img" src="images/article_img_300x200.svg" alt="sample">
+          </a>
+        </article>
+        <article class="river-article">
+          <a href="#" class="text-dark hover-underline-text d-flex gap-1">
+            <h2 class="river-article-title underline-on-hover">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod.
+            </h2>
+            <img class="river-article-img" src="images/article_img_300x200.svg" alt="sample">
+          </a>
+        </article>
+        <article class="river-article">
+          <a href="#" class="text-dark hover-underline-text d-flex gap-1">
+            <h2 class="river-article-title underline-on-hover">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod.
+            </h2>
+            <img class="river-article-img" src="images/article_img_300x200.svg" alt="sample">
+          </a>
+        </article>
+        <article class="river-article">
+          <a href="#" class="text-dark hover-underline-text d-flex gap-1">
+            <h2 class="river-article-title underline-on-hover">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod.
+            </h2>
+            <img class="river-article-img" src="images/article_img_300x200.svg" alt="sample">
+          </a>
+        </article>
+        <article class="river-article last-row-lg">
+          <a href="#" class="text-dark hover-underline-text d-flex gap-1">
+            <h2 class="river-article-title underline-on-hover">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod.
+            </h2>
+            <img class="river-article-img" src="images/article_img_300x200.svg" alt="sample">
+          </a>
+        </article>
+        <article class="river-article last-row">
+          <a href="#" class="text-dark hover-underline-text d-flex gap-1">
+            <h2 class="river-article-title underline-on-hover">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod.
+            </h2>
+            <img class="river-article-img" src="images/article_img_300x200.svg" alt="sample">
+          </a>
+        </article>
+      </section>
+    </section>
+    <hr class="main-section-hr">
+    <section class="body-section services-section">
+      <div class="services-list-header d-flex align-items-center">
+        <h2 class="services-section-title">Lorem ipsum dolor sit</h2>
+        <a href="#" class="btn services-section-button rounded-pill">Discover</a>
+        <div class="swiper-buttons-container ms-auto text-black d-md-flex gap-2">
+          <button class="swiper-button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          <button class="swiper-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <section class="swiper services-section-carousel">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide">
+            <a href="#" class="d-flex align-items-center text-black hover-underline-text">
+              <img src="images/login-icon.svg" width="80" height="80" class="" alt="...">
+              <div>
+                <p class="services-section-carousel-item-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="services-section-carousel-item-description">Lorem ipsum dolor sit amet</p>
+              </div>
+            </a>
+          </article>
+          <article class="swiper-slide">
+            <a href="#" class="d-flex align-items-center text-black hover-underline-text">
+              <img src="images/login-icon.svg" width="80" height="80" class="" alt="...">
+              <div>
+                <p class="services-section-carousel-item-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="services-section-carousel-item-description">Lorem ipsum dolor sit amet</p>
+              </div>
+            </a>
+          </article>
+          <article class="swiper-slide">
+            <a href="#" class="d-flex align-items-center text-black hover-underline-text">
+              <img src="images/login-icon.svg" width="80" height="80" class="" alt="...">
+              <div>
+                <p class="services-section-carousel-item-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="services-section-carousel-item-description">Lorem ipsum dolor sit amet</p>
+              </div>
+            </a>
+          </article>
+          <article class="swiper-slide d-none d-md-flex">
+            <a href="#" class="d-flex align-items-center text-black hover-underline-text">
+              <img src="images/login-icon.svg" width="80" height="80" class="" alt="...">
+              <div>
+                <p class="services-section-carousel-item-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="services-section-carousel-item-description">Lorem ipsum dolor sit amet</p>
+              </div>
+            </a>
+          </article>
+          <article class="swiper-slide d-none d-md-flex">
+            <a href="#" class="d-flex align-items-center text-black hover-underline-text">
+              <img src="images/login-icon.svg" width="80" height="80" class="" alt="...">
+              <div>
+                <p class="services-section-carousel-item-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="services-section-carousel-item-description">Lorem ipsum dolor sit amet</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <a href="#" class="btn carousel-button d-md-none">Lorem Ipsum</a>
+      </section>
+
+    </section>
+    <hr class="main-section-hr">
+    <section class="body-section section1 container-fluid">
+      <h2 class="section1-title">Sélection de la rédaction</h2>
+      <section class="section1-container container-fluid d-flex flex-wrap">
+        <article class="section1-article">
+          <a href="#" class="article-link d-block hover-underline-text">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="images/article_img_1294x862.svg" type="image/svg+xml">
+              <source media="(min-width: 1024px)" srcset="images/article_img_300x200.svg" type="image/svg+xml">
+              <img src="images/article_img_300x200.svg" class="section1-article-image" alt="sample">
+            </picture>
+            <div class="section1-article-text col-10 justify-content-center">
+              <p class="section1-article-type">Décryptage</p>
+              <p class="section1-article-author">Arnaud Leparmentier</p>
+              <h3 class="text-center">
+                <span class="section1-article-icon"><img src="images/login-icon.svg" width="20" alt="sample"></span>
+                <span class="section1-article-title underline-on-hover">L’administration Trump rétropédale après la panique mondiale des marchés financiers</span>
+              </h3>
+              <p class="section1-article-description">Donald Trump, Elon Musk et le secrétaire au Trésor font machine arrière concernant le renvoi du patron de la Fed,
+                le DOGE et les droits de douane chinois, dans le but de rassurer les acteurs financiers et reconquérir les Américains.
+              </p>
+            </div>
+            <p class="article-footer text-black">3 hours</p>
+          </a>
+        </article>
+        <hr class="section1-divider">
+        <article class="section1-article">
+          <a href="#" class="article-link d-block hover-underline-text">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="images/article_img_1294x862.svg" type="image/svg+xml">
+              <source media="(min-width: 1024px)" srcset="images/article_img_300x200.svg" type="image/svg+xml">
+              <img src="images/article_img_300x200.svg" class="section1-article-image" alt="sample">
+            </picture>
+            <div class="section1-article-text col-10 justify-content-center">
+              <p class="section1-article-type">Décryptage</p>
+              <p class="section1-article-author">Arnaud Leparmentier</p>
+              <h3 class="text-center">
+                <span class="section1-article-icon"><img src="images/login-icon.svg" width="20" alt="sample"></span>
+                <span class="section1-article-title underline-on-hover">L’administration Trump rétropédale après la panique mondiale des marchés financiers</span>
+              </h3>
+              <p class="section1-article-description">Donald Trump, Elon Musk et le secrétaire au Trésor font machine arrière concernant le renvoi du patron de la Fed,
+                le DOGE et les droits de douane chinois, dans le but de rassurer les acteurs financiers et reconquérir les Américains.
+              </p>
+            </div>
+            <p class="article-footer text-black">3 hours</p>
+          </a>
+        </article>
+        <hr class="section1-divider">
+        <article class="section1-article">
+          <a href="#" class="article-link d-block hover-underline-text">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="images/article_img_1294x862.svg" type="image/svg+xml">
+              <source media="(min-width: 1024px)" srcset="images/article_img_300x200.svg" type="image/svg+xml">
+              <img src="images/article_img_300x200.svg" class="section1-article-image" alt="sample">
+            </picture>
+            <div class="section1-article-text col-10 justify-content-center">
+              <p class="section1-article-type">Décryptage</p>
+              <p class="section1-article-author">Arnaud Leparmentier</p>
+              <h3 class="text-center">
+                <span class="section1-article-icon"><img src="images/login-icon.svg" width="20" alt="sample"></span>
+                <span class="section1-article-title underline-on-hover">L’administration Trump rétropédale après la panique mondiale des marchés financiers</span>
+              </h3>
+              <p class="section1-article-description">Donald Trump, Elon Musk et le secrétaire au Trésor font machine arrière concernant le renvoi du patron de la Fed,
+                le DOGE et les droits de douane chinois, dans le but de rassurer les acteurs financiers et reconquérir les Américains.
+              </p>
+            </div>
+            <p class="article-footer text-black">3 hours</p>
+          </a>
+        </article>
+      </section>
+    </section>
+    <hr class="main-section-hr">
+    <section class="body-section section-2 container-fluid">
+      <a href="#" class="hover-underline-text text-black">
+        <h2 class="section2-title underline-on-hover">Idées</h2>
+      </a>
+      <section class="section2-container container-fluid d-flex">
+        <article class="section2-article">
+          <a href="#" class="hover-underline-text">
+            <p class="section2-article-type">Éditorial</p>
+            <h3 class="section2-article-title underline-on-hover">Face aux géants du numérique, l’Union européenne doit rester ferme</h3>
+            <p class="section2-article-author">Le Monde</p>
+          </a>
+        </article>
+        <hr class="section2-divider">
+        <article class="section2-article">
+          <a href="#" class="hover-underline-text">
+            <p class="section2-article-type">Chronique</p>
+            <h3 class="section2-article-title underline-on-hover">Bark bark bark</h3>
+            <p class="section2-article-author">
+              <img class="" src="images/journal_icon.svg" alt="sample" width="52" height="52" style="border-radius: 50%;">My dog
+            </p>
+          </a>
+        </article>
+        <hr class="section2-divider">
+        <article class="section2-article">
+          <a href="#" class="hover-underline-text">
+            <p class="section2-article-type">Éditorial</p>
+            <h3 class="section2-article-title underline-on-hover">Face aux géants du numérique, l’UE doit rester ferme</h3>
+            <p class="section2-article-author">Le Monde</p>
+          </a>
+        </article>
+      </section>
+    </section>
+    <hr class="main-section-hr">
+    <section class="body-section section-3 container-fluid">
+      <h2 class="section3-title">Les plus lus</h2>
+      <ol class="section3-article-list list-unstyled articles-grid">
+        <li class="section3-article">
+          <a href="#" class="text-black text-decoration-none d-flex">
+            <img src="images/1.svg" class="section3-article-number" alt="sample">
+            <p class="section3-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod. Quisque eu lobortis ligula.</p>
+          </a>
+        </li>
+        <li class="section3-article">
+          <a href="#" class="text-black text-decoration-none d-flex">
+            <img src="images/2.svg" class="section3-article-number" alt="sample">
+            <p class="section3-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod. Quisque eu lobortis ligula.</p>
+          </a>
+        </li>
+        <li class="section3-article">
+          <a href="#" class="text-black text-decoration-none d-flex">
+            <img src="images/3.svg" class="section3-article-number" alt="sample">
+            <p class="section3-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod. Quisque eu lobortis ligula.</p>
+          </a>
+        </li>
+        <li class="section3-article">
+          <a href="#" class="text-black text-decoration-none d-flex">
+            <img src="images/4.svg" class="section3-article-number" alt="sample">
+            <p class="section3-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod. Quisque eu lobortis ligula.</p>
+          </a>
+        </li>
+        <li class="section3-article">
+          <a href="#" class="text-black text-decoration-none d-flex">
+            <img src="images/5.svg" class="section3-article-number" alt="sample">
+            <p class="section3-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod. Quisque eu lobortis ligula.</p>
+          </a>
+        </li>
+        <li class="section3-article">
+          <a href="#" class="text-black text-decoration-none d-flex">
+            <img src="images/6.svg" class="section3-article-number" alt="sample">
+            <p class="section3-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod. Quisque eu lobortis ligula.</p>
+          </a>
+        </li>
+        <li class="section3-article">
+          <a href="#" class="text-black text-decoration-none d-flex">
+            <img src="images/7.svg" class="section3-article-number" alt="sample">
+            <p class="section3-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod. Quisque eu lobortis ligula.</p>
+          </a>
+        </li>
+        <li class="section3-article">
+          <a href="#" class="text-black text-decoration-none d-flex">
+            <img src="images/8.svg" class="section3-article-number" alt="sample">
+            <p class="section3-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod. Quisque eu lobortis ligula.</p>
+          </a>
+        </li>
+        <li class="section3-article">
+          <a href="#" class="text-black text-decoration-none d-flex">
+            <img src="images/9.svg" class="section3-article-number" alt="sample">
+            <p class="section3-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus eleifend vitae lectus et euismod. Quisque eu lobortis ligula.</p>
+          </a>
+        </li>
+      </ol>
+    </section>
+    <hr class="main-section-hr">
+    <section class="body-section section-4 container-fluid">
+      <a href="#" class="section4-title hover-underline-text text-black">
+        <h2 class="underline-on-hover">Lorem Ipsum</h2>
+      </a>
+      <section class="section4-content">
+        <article class="section4-main-article">
+          <a href="#" class=" hover-underline-text text-black">
+            <img src="images/article_img_300x200.svg" class="section4-article-image img-fluid" alt="sample">
+            <p class="image-credits">Lorem/ipsum</p>
+            <p class="section4-main-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </a>
+        </article>
+        <section class="section4-related-articles">
+          <article class="section4-article">
+            <a class=" hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </a>
+          </article>
+          <article class="section4-article">
+            <a class="hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus eleifend vitae lectus et euismod.</p>
+            </a>
+          </article>
+          <article class="section4-article last-row-lg">
+            <a class="hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus eleifend vitae lectus et euismod.</p>
+            </a>
+          </article>
+          <article class="section4-article">
+            <a class="hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus eleifend vitae lectus et euismod.</p>
+            </a>
+          </article>
+          <article class="section4-article">
+            <a class="hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </a>
+          </article>
+          <article class="section4-article last-row-lg">
+            <a class="hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus eleifend vitae lectus et euismod.</p>
+            </a>
+          </article>
+
+
+
+
+
+        </section>
+      </section>
+    </section>
+    <hr class="main-section-hr">
+    <section class="body-section section-4 container-fluid">
+      <a href="#" class="section4-title hover-underline-text text-black">
+        <h2 class="underline-on-hover">Lorem Ipsum</h2>
+      </a>
+      <section class="section4-links">
+        <span class="section4-link">Lorem ipsum</span>
+        <span class="section4-link-middle">dolor sit amet</span>
+        <span class="section4-link">consectetur adipiscing elit.</span>
+      </section>
+      <section class="section4-content">
+        <article class="section4-main-article">
+          <a href="#" class=" hover-underline-text text-black">
+            <img src="images/article_img_300x200.svg" class="section4-article-image img-fluid" alt="sample">
+            <p class="image-credits">Lorem/ipsum</p>
+            <p class="section4-main-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </a>
+        </article>
+        <section class="section4-related-articles">
+          <article class="section4-article">
+            <a class=" hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </a>
+          </article>
+          <article class="section4-article">
+            <a class="hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus eleifend vitae lectus et euismod.</p>
+            </a>
+          </article>
+          <article class="section4-article last-row-lg">
+            <a class="hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus eleifend vitae lectus et euismod.</p>
+            </a>
+          </article>
+          <article class="section4-article">
+            <a class="hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus eleifend vitae lectus et euismod.</p>
+            </a>
+          </article>
+          <article class="section4-article">
+            <a class="hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </a>
+          </article>
+          <article class="section4-article last-row-lg">
+            <a class="hover-underline-text text-black">
+              <p class="section4-article-title underline-on-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus eleifend vitae lectus et euismod.</p>
+            </a>
+          </article>
+        </section>
+      </section>
+    </section>
+  </section>
+
+</main>
+
+<footer class="footer container-fluid text-white pt-4 justify-content-center">
+  <section class="footer-container mx-auto">
+    <section class="footer-main py-3 d-flex justify-content-center align-content-start gap-3">
+      <section class="footer-categories">
+        <section class="category">
+          <section class="d-none d-md-inline">
+            <p class="category-title">SERVICES LE MONDE</p>
+            <ul class="category-list">
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Boutique Le Monde
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Les ateliers du Monde
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Mémorable : travailler sa mémoire
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Mots croisés
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Sudokus
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Résultats des élections législatives<br>2024
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Education
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Gastronomie
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Réutiliser nos contenus
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="accordion d-md-none" id="footerAccordion1">
+              <div class="accordion-item bg-transparent text-white border-0">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button bg-transparent text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colOne">
+                    SERVICES LE MONDE
+                  </button>
+                </h2>
+                <div id="colOne" class="accordion-collapse collapse" data-bs-parent="#footerAccordion1">
+                  <div class="accordion-body">
+                    <ul class="category-list">
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Boutique Le Monde
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Les ateliers du Monde
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Mémorable : travailler sa mémoire
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Mots croisés
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Sudokus
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Résultats des élections législatives<br> 2024
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Education
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Gastronomie
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Réutiliser nos contenus
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <hr class="footer-separator d-md-none">
+        <section class="category">
+          <section class="d-none d-md-inline">
+            <p class="category-title">GUIDES D'ACHAT LE MONDE</p>
+            <ul class="category-list">
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Les meilleurs robots pâtissiers
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Les meilleurs robots aspirateurs laveurs
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Jeux de société pour adultes
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Le meilleur antivol pour vélo
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Les meilleures friteuses sans huile
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Les meilleures imprimantes laser
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="accordion d-md-none" id="footerAccordion2">
+              <div class="accordion-item bg-transparent text-white border-0">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button bg-transparent text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colTwo">
+                    GUIDES D'ACHAT LE MONDE
+                  </button>
+                </h2>
+                <div id="colTwo" class="accordion-collapse collapse" data-bs-parent="#footerAccordion2">
+                  <div class="accordion-body">
+                    <ul class="category-list">
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Les meilleurs robots pâtissiers
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Les meilleurs robots aspirateurs laveurs
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Jeux de société pour adultes
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Le meilleur antivol pour vélo
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Les meilleures friteuses sans huile
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Les meilleures imprimantes laser
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <hr class="footer-separator d-md-none">
+        <section class="category">
+          <section class="d-none d-md-inline">
+            <p class="category-title">LE MONDE À L'INTERNATIONAL</p>
+            <ul class="category-list">
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Le Monde in English
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Algérie
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Belgique
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Canada
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Côte d’Ivoire
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Mali
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Maroc
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Sénégal
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Suisse
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Tunisie
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="accordion d-md-none" id="footerAccordion3">
+              <div class="accordion-item bg-transparent text-white border-0">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button bg-transparent text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colThree">
+                    LE MONDE À L'INTERNATIONAL
+                  </button>
+                </h2>
+                <div id="colThree" class="accordion-collapse collapse" data-bs-parent="#footerAccordion3">
+                  <div class="accordion-body">
+                    <ul class="category-list">
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Le Monde in English
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Algérie
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Belgique
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Canada
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Côte d’Ivoire
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Mali
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Maroc
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Sénégal
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Suisse
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Tunisie
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <hr class="footer-separator d-md-none">
+        <section class="category">
+          <section class="d-none d-md-inline">
+            <p class="category-title">SERVICES PARTENAIRES</p>
+            <ul class="category-list">
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Nos partenaires
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Découvrir le jardinage
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Hits du moment
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Mahjong solitaire gratuit
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Jeux gratuits d’arcade
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Bubble Shooter
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Consulter les annonces légales
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Le Monde pour les hôtels
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Art et objets avec Ars Mundi
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="accordion d-md-none" id="footerAccordion4">
+              <div class="accordion-item bg-transparent text-white border-0">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button bg-transparent text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colFour">
+                    SERVICES PARTENAIRES
+                  </button>
+                </h2>
+                <div id="colFour" class="accordion-collapse collapse" data-bs-parent="#footerAccordion4">
+                  <div class="accordion-body">
+                    <ul class="category-list">
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Nos partenaires
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Découvrir le jardinage
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Hits du moment
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Mahjong solitaire gratuit
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Jeux gratuits d’arcade
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Bubble Shooter
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Consulter les annonces légales
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Le Monde pour les hôtels
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Art et objets avec Ars Mundi
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <hr class="footer-separator d-md-none">
+        <section class="category">
+          <section class="d-none d-md-inline">
+            <p class="category-title">SITES DU GROUPE</p>
+            <ul class="category-list">
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Le Monde Evènements
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Courrier International
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Télérama
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  La Vie
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Le HuffPost
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Le Nouvel Obs
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Le Monde diplomatique
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  La société des lecteurs du Monde
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Talents
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Source Sûre
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Le Club de l’économie
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  M Publicité
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover-underline-text">
+                  Le carnet du Monde
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="accordion d-md-none" id="footerAccordion5">
+              <div class="accordion-item bg-transparent text-white border-0">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button bg-transparent text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colFive">
+                    SITES DU GROUPE
+                  </button>
+                </h2>
+                <div id="colFive" class="accordion-collapse collapse" data-bs-parent="#footerAccordion5">
+                  <div class="accordion-body">
+                    <ul class="category-list">
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Le Monde Evènements
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Courrier International
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Télérama
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          La Vie
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Le HuffPost
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Le Nouvel Obs
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Le Monde diplomatique
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          La société des lecteurs du Monde
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Talents
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Source Sûre
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Le Club de l’économie
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          M Publicité
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-white hover-underline-text">
+                          Le carnet du Monde
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <hr class="footer-separator d-md-none">
+      </section>
+      <section class="footer-utils d-flex flex-column flex-wrap align-content-start">
+        <section class="footer-utils-icon-links align-items-center pb-2">
+          <section class="footer-mail me-4">
+            <p class="footer-title">NEWSLETTERS DU MONDE</p>
+            <a href="#" class="text-white hover-underline-text">
+              <img src="images/facebook-icon.svg" alt="sample">Recevoir les newsletters du Monde
+            </a>
+          </section>
+          <hr>
+          <section class="footer-mobiles">
+            <p class="footer-title">APPLICATIONS MOBILES</p>
+            <img src="images/facebook-icon.svg" alt="sample">
+            <a href="#" class="text-white hover-underline-text ">Sur iPhone</a>
+            <a href="#" class="text-white hover-underline-text">Sur Android</a>
+          </section>
+        </section>
+        <hr class="footer-utils-separator">
+        <section class="footer-utils-subs">
+          <p class="footer-title">ABONNEMENT</p>
+          <ul class="list-unstyled text-white">
+            <li>
+              <a href="#" class="text-white hover-underline-text">
+                <img src="images/facebook-icon.svg" alt="sample">Archives du Monde
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover-underline-text">
+                <img src="images/facebook-icon.svg" alt="sample">S’abonner / Se désabonner
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover-underline-text">
+                <img src="images/facebook-icon.svg" alt="sample">Se connecter
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover-underline-text">
+                <img src="images/facebook-icon.svg" alt="sample">Consulter le Journal du jour
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover-underline-text">
+                <img src="images/facebook-icon.svg" alt="sample">Évenements abonnés
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover-underline-text">
+                <img src="images/facebook-icon.svg" alt="sample">Jeux-concours abonnés
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover-underline-text">
+                <img src="images/facebook-icon.svg" alt="sample">Contacter Le Monde
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <section class="footer-mandatory py-3 d-flex flex-wrap">
+      <p class="footer-title col-12 py-2">INFORMATIONS LÉGALES LE MONDE</p>
+      <ul class="d-flex flex-wrap justify-content-center">
+        <li><a href="#" class=" hover-underline-text text-white">Mentions légales</a></li>
+        <li><a href="#" class=" hover-underline-text text-white">Charte du Groupe</a></li>
+        <li><a href="#" class=" hover-underline-text text-white">Politique de confidentialité</a></li>
+        <li><a href="#" class=" hover-underline-text text-white">Gestion des cookies</a></li>
+        <li><a href="#" class=" hover-underline-text text-white">Conditions générales</a></li>
+        <li><a href="#" class=" hover-underline-text text-white">Aide (FAQ)</a></li>
+      </ul>
+    </section>
+    <section class="footer-social py-3 d-flex flex-wrap">
+      <p class="footer-title col-12 py-2">SUIVEZ LE MONDE</p>
+      <ul class="d-flex flex-wrap justify-content-center">
+        <li class="list-unstyled">
+          <a href="#" class="footer-social-link hover-underline-text text-white">
+            <img src="images/facebook-icon.svg" alt="sample" width="24">Facebook
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="#" class="footer-social-link hover-underline-text text-white">
+            <img src="images/youtube-icon.svg" alt="sample" width="24">YouTube
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="#" class="footer-social-link hover-underline-text text-white ">
+            <img src="images/instagram-icon.svg" alt="sample"  width="24">Instagram
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="#" class="footer-social-link hover-underline-text text-white ">
+            <img src="images/snapchat-icon.svg" alt="sample" width="24">Snapchat
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="#" class="footer-social-link hover-underline-text text-white ">
+            <img src="images/tiktok-icon.svg" alt="sample" width="24">TikTok
+          </a>
+        </li>
+        <li class="list-unstyled">
+          <a href="#" class="footer-social-link hover-underline-text text-white">
+            <img src="images/filsRSS-icon.svg" alt="sample" width="24">Fils RSS
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</footer>
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  new Swiper(".services-section-carousel", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1, // sotto 768px → 1 elemento
+      },
+      768: {
+        slidesPerView: 2, // Due slide per viewport >= 768px
+      },
+      1024: {
+        slidesPerView: 3, // Tre slide per viewport >= 1024px
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

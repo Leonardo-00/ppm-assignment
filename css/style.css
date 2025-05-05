@@ -1,0 +1,144 @@
+/* vars */
+:root {
+    --hover-blue: #007bff;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.hover-underline-text{
+    text-decoration: none;
+}
+
+a.hover-underline-text:hover .underline-on-hover{
+    text-decoration: underline;
+}
+
+.image-credits{
+    text-align: end;
+    font-size: 1.25rem;
+    opacity: .8;
+}
+
+.vertical-divider{
+    height: 28px;
+    max-height: 100%;
+    width: 1px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: lightgrey;
+}
+
+.article-footer{
+    font-size: 1.3rem;
+    opacity: 0.75;
+    align-self: end;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+/* Main body */
+
+.main{
+    justify-content: center; !important;
+}
+
+.main-section-hr{
+    border: none !important;
+    width: 100%;
+    height: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: black;
+    opacity: 1;
+}
+
+@media (min-width: 1024px){
+    .main{
+        background-color: rgba(0,0,0,0.03);
+    }
+}
+
+/* Main body container */
+
+.main-body-container{
+    background-color: white;
+    justify-self: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 575px){
+
+    .main-body-container{
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+    .main-body-container{
+        padding-left: 32px;
+        padding-right: 32px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+
+    .main-body-container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    .main-body-container{
+        width: 664px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .main-body-container{
+        width: 1000px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}
+
+
+/* Body section */
+
+.body-section{
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1023px) {
+
+    .body-section{
+        padding: 28px 0 0;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .body-section{
+        width: 100%;
+        padding: 32px 0 0;
+    }
+
+    .main-body-container .body-section:last-child{
+        margin-bottom: 0;
+    }
+}
