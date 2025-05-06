@@ -1,94 +1,100 @@
-/* section1 */
+/* selection-section */
 
-.section1-title{
-    margin-bottom: 16px;
-}
-
-.section1-divider{
+.selection-section-divider{
     height: 1px;
     background-color: #ccc;
     width: 100%;
 }
 
 @media (min-width: 1024px){
-    .section1-divider{
+
+    .selection-section-title{
+        margin-bottom: 16px;
+    }
+
+    .selection-section-divider{
         display: none;
     }
 }
 
 @media (max-width: 1023px){
-    .section1-title{
-        padding-bottom: 24px;
+
+    .selection-section-title{
+        margin-bottom: 0;
+    }
+
+    .selection-section-article{
+        padding-top: 16px;
     }
 }
 
-/* section1-container */
+/* selection-section-container */
 
-.section1-container{
+.selection-section-container{
     padding-left: 0;
     padding-right: 0;
 }
 
 @media (max-width: 1023px){
 
-    .section1-container{
+    .selection-section-container{
         justify-content: center;
     }
 }
 
 @media (min-width: 1024px){
 
-    .section1-container{
+    .selection-section-container{
         justify-content: space-between;
     }
 }
 
-/* section1-article */
+/* selection-section-article */
 
-.section1-article p{
+.selection-section-article p{
     text-align: center;
 }
 
-.section1-article-type{
+.selection-section-article-type{
     font-size: 1.3rem;
     font-weight: 600;
 }
 
-.section1-article-author{
+.selection-section-article-author{
     font-size: 1.3rem;
     opacity: 0.75;
 }
 
-.section1-article-title{
+.selection-section-article-title{
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-.section1-article-description{
+.selection-section-article-description{
     font-size: 1.5rem;
     opacity: 0.7;
 }
 
-.section1-article-footer{
+.selection-section-article-footer{
     opacity: 0.75;
     align-self: end;
     text-align: center;
 }
 
-.section1-article-text {
+.selection-section-article-text {
     background-color: white;
     color: black;
     justify-self: center;
     transform: translateY(-30%);
 }
 
-.section1-article-image{
+.selection-section-article-image{
     width: 100%;
 }
 
 @media (max-width: 1023px){
 
-    .section1-article{
+    .selection-section-article{
         align-self: center;
         width: 100%;
     }
@@ -97,7 +103,7 @@
 
 @media (min-width: 1024px){
 
-    .section1-article{
+    .selection-section-article{
         border: 1px lightgrey solid;
         width:300px;
     }
